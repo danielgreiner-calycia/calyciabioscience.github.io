@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaLycia Bioscience | Pioneering Myeloid based cell therapies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+            color: #1A202C;
+        }
+
+        .hero-bg {
+            background-color: #0d1a2e;
+            background-image:
+                radial-gradient(at 10% 20%, hsla(212, 45%, 25%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 90%, hsla(212, 45%, 20%, 0.2) 0px, transparent 50%);
+        }
+        
+        .section-title {
+            color: #003366; /* A deep, professional blue */
+        }
+
+        .team-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold section-title">
+                AURA Bio
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#approach" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Our Approach</a>
+                <a href="#team" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Team</a>
+                <a href="#careers" class="text-gray-600 hover:text-blue-700 transition-colors duration-300">Careers</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-300 shadow-sm">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#approach" class="block text-gray-600 hover:text-blue-700">Our Approach</a>
+            <a href="#team" class="block text-gray-600 hover:text-blue-700">Team</a>
+            <a href="#careers" class="block text-gray-600 hover:text-blue-700">Careers</a>
+            <a href="#contact" class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-24 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unlocking the Full Potential of Cell Therapy</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    We are a preclinical biotechnology startup out of Salt Lake City. We are developing novel myeloid based cell therapies designed to treat solid tumors like Glioblastoma. We are currently operating in stealth, but we look forward to sharing more about our technology in the future.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section id="approach" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Our Approach</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">While in stealth, we are focused on building a robust scientific platform to overcome the critical challenges in cell therapy today.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6a2 2 0 11-4 0 2 2 0 014 0zM12 18a2 2 0 11-4 0 2 2 0 014 0zM12 6V5m0 14v-1m0-6a6 6 0 100 12 6 6 0 000-12z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Targeted Engineering</h3>
+                        <p class="text-gray-600">Developing novel platform technologies to precisely engineer cells for enhanced safety and efficacy.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Patient-Focused Science</h3>
+                        <p class="text-gray-600">Our research is driven by a deep understanding of disease biology and the needs of the patients we aim to serve.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Scalable Manufacturing</h3>
+                        <p class="text-gray-600">Investing early in robust and scalable manufacturing processes to ensure future patient access.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Our Team</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">We are founded by a team of seasoned scientists and entrepreneurs with a track record of success in drug development and biotechnology.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="team-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://placehold.co/400x400/003366/FFFFFF?text=JD" alt="Headshot of Jane Doe" class="w-full h-auto object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold">Daniel Greiner, PhD</h3>
+                            <p class="text-blue-700">Co-Founder & CEO</p>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="team-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://placehold.co/400x400/003366/FFFFFF?text=JS" alt="Headshot of John Smith" class="w-full h-auto object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold">Minna Roh-Johnson, PhD</h3>
+                            <p class="text-blue-700">Co-Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold section-title">Join Our Mission</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">We are looking for passionate, creative, and driven individuals to help us build the future of medicine. If you are interested in joining our team, we'd love to hear from you.</p>
+                <div class="mt-8">
+                    <a href="mailto:careers@aurabio.example" class="bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow">Contact Us About Careers</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">AURA Bio</h3>
+                    <p class="text-gray-400">Salt Lake City, UT</p>
+                </div>
+                <div class="text-gray-400">
+                    <p>General Inquiries: <a href="mailto:info@aurabio.example" class="hover:text-white underline">info@aurabio.example</a></p>
+                    <p class="mt-1">© 2025 Aura Bio, Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
